@@ -1,4 +1,4 @@
-## Infinix NOTE 40 Pro 4G (_X6850_)
+## Infinix NOTE 40 Pro 4G (_X6880_)
 ## TWRP / OrangeFox device tree
 
 ## Device specifications
@@ -39,5 +39,5 @@ Works:
 _Lunch_ command :
 
 ```
-lunch twrp_X6850-eng && mka adbd vendorbootimage
+lunch twrp_X6880-eng && mka adbd vendorbootimage
 ```

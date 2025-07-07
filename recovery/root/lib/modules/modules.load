@@ -59,8 +59,8 @@ cmdq_helper_inf.ko
 mtk-mml.ko
 mtk_panel_ext.ko
 tran_drm_panel_i2c.ko
-nt37703a_fhdp_dsi_vdo_tm_tm_120hz_x6850.ko
-rm69220_fhdp_dsi_vdo_dsc_csot_csot_120hz_x6850.ko
+nt37703a_fhdp_dsi_vdo_tm_tm_120hz_x6880.ko
+rm69220_fhdp_dsi_vdo_dsc_csot_csot_120hz_x6880.ko
 mediatek-drm.ko
 aee_rs.ko
 mmprofile.ko
@@ -102,6 +102,7 @@ spi-mt65xx.ko
 sc8950.ko
 extdev_io_class.ko
 rt5133-regulator.ko
+et5904.ko
 clkbuf.ko
 teeperf.ko
 mcDrvModule.ko
@@ -116,6 +117,7 @@ rt-regmap.ko
 pd_dbg_info.ko
 tcpc_class.ko
 tcpc_rt1711h.ko
+tcpc_upm7610.ko
 mtk_chg_type_det.ko
 mtk_pd_adapter.ko
 mtk_pep40.ko
@@ -126,8 +128,6 @@ rfc_ta.ko
 tran_common_class.ko
 prop_ta_class.ko
 pca_rfc_ta.ko
-wireless_ta.ko
-hl7138.ko
 mtk_tran_tc30.ko
 mtk_tran_hvdcp20.ko
 mtk_pep50.ko
@@ -138,13 +138,11 @@ tran_chg.ko
 tran_battery_aging.ko
 mtk_charger_framework.ko
 rt_pd_manager.ko
+hl7139a.ko
 mt6358_battery.ko
 tran_otg.ko
-wireless_mt5728.ko
 tran_usb_ctrl.ko
 usb_switch_evo.ko
-tran_adapter_control.ko
-leds-aw22xxx.ko
 pwm-mtk-disp.ko
 leds-mtk.ko
 leds-mtk-disp.ko
@@ -159,6 +157,7 @@ pmic_lvsys_notify.ko
 reset-ti-syscon.ko
 mt6358-accdet.ko
 mtk_slbc.ko
+regulator-vibrator.ko
 vcp_status.ko
 meta.ko
 mtk_sync.ko
