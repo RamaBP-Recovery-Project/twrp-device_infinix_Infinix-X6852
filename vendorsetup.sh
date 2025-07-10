@@ -19,7 +19,7 @@
 #
 
 #set -o xtrace
-FDEVICE="X6880"
+FDEVICE="X6852"
 
 # Shell compatibility detection
 if [ -n "$ZSH_VERSION" ]; then
@@ -37,9 +37,9 @@ else
 	exit 1
 fi
 
-fetch_mt6789_common_repo() {
-	local URL=https://github.com/transsion-mt6789/twrp-device_transsion_mt6789-common.git
-	local common=device/transsion/mt6789-common
+fetch_mt6855_common_repo() {
+	local URL=https://github.com/RamaBP-Recovery-Project/twrp-device_transsion_mt6855-common.git
+	local common=device/transsion/mt6855-common
 	if [ ! -d $common ]; then
 		echo "Cloning $URL ... to $common"
 		git clone $URL -b fox_12.1-tranos15 $common
@@ -87,8 +87,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# Clone to fix build on minimal manifest
 	git clone https://android.googlesource.com/platform/external/gflags/ -b android-12.1.0_r4 external/gflags
 
-	# mt6789-common
-	fetch_mt6789_common_repo
+	# mt6855-common
+	fetch_mt6855_common_repo
 
 	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v28.1.zip
 	export FOX_VIRTUAL_AB_DEVICE=1
